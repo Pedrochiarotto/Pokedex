@@ -3,12 +3,6 @@ const pokemonList = document.getElementById('pokemonList')
 let offset = 0;
 const limit = 12;
 
-
- 
-
-   
-
-
 function loadPokemonItens(offset,limit){
     pokeapi.getPokemons(offset, limit ).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon)=>
@@ -36,8 +30,9 @@ function loadPokemonItens(offset,limit){
 loadPokemonItens(offset,limit)
 
 loadMoreButton.addEventListener('click', ()=> {
-    loadPokemonItens(offset,limit)
     offset += limit;
+    loadPokemonItens(offset,limit)
+    
 })
        
 
