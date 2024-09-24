@@ -12,6 +12,12 @@ body{
     background: url('../images/bodyBG.png') ;
 }
 
+@media screen and (min-width: 380px) {
+    body{
+        background: url('../images/bodyBG.png') repeat-y ;
+    }
+}
+
 .conteudo {
     width: 100vw;
     height: 100vh;
