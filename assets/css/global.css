@@ -4,19 +4,19 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
 }
+    
+
 
 body{
      
-    background: url('../images/bodyBG.png') ;
-}
+    background: url('../images/bodyBG.png');
+    background-size: contain;
+}    
 
-@media screen and (min-width: 380px) {
-    body{
-        background: url('../images/bodyBG.png') repeat-y ;
-    }
-}
+
 
 .conteudo {
     width: 100vw;
